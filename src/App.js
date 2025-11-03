@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// ...existing code...
+
 import CryptoTable from './CryptoTable';
 
 function App() {
