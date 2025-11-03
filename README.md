@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Crypto Tracker
 
@@ -18,3 +19,6 @@ React app to track live prices of the top 20 cryptocurrencies in USD.
 2. Start the app: `npm start`
 
 =======
+=======
+# crypto-tracker
+>>>>>>> 6fec6014ee49aa8c4c41976650803d4bfdfb68d5
