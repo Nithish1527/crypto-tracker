@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: #181a20;
+  margin: 0;
+  padding: 0;
+  color: #e0e0e0;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #23242b;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.5);
+  padding: 32px 24px;
+}
+
+.app-title {
+  text-align: left;
+  margin-bottom: 24px;
+  font-size: 2.2rem;
+  color: #f5f5f5;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.loader {
+  text-align: center;
+  margin: 32px 0;
+  font-size: 1.2rem;
+  color: #f5f5f5;
+}
+
+.error-alert {
+  background: #2d1e1e;
+  color: #ff5252;
+  padding: 12px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.crypto-table-container {
+  margin: 24px 0;
+}
+
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #23242b;
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 1rem;
+}
+.crypto-table th, .crypto-table td {
+  padding: 10px 6px;
+  border-bottom: 1px solid #333;
+}
+.crypto-table th {
+  background: #181a20;
+  font-weight: bold;
+  color: #f5f5f5;
+  font-size: 1.05rem;
+  border-bottom: 2px solid #444;
+  letter-spacing: 0.5px;
+}
+.crypto-table td {
+  font-family: 'Roboto Mono', 'Consolas', monospace;
+  color: #e0e0e0;
+}
+.crypto-table tr.selected {
+  background: #222c3a;
+}
+.crypto-table tr:hover {
+  background: #1e222d;
+}
+.crypto-table td img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.crypto-table td:last-child {
+  font-weight: bold;
+}
+.crypto-table td[data-change="up"] {
+  color: #00ff6a;
+}
+.crypto-table td[data-change="down"] {
+  color: #ff386a;
+}
