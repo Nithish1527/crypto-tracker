@@ -42,12 +42,14 @@ function CryptoTable({ coins, onSelect, selectedCoin, watchlist = [], addToWatch
                 {coin.image && <img src={coin.image} alt={coin.name} width={24} height={24} style={{ verticalAlign: 'middle', marginRight: 8 }} />}
                 {coin.name}
               </td>
-              <td style={{ textAlign: 'right' }}>${coin.current_price.toLocaleString()}</td>
+                <td style={{ textAlign: 'right' }}>
+                  {coin.current_price != null ? `$${coin.current_price.toLocaleString()}` : 'N/A'}
+                </td>
               <td
                 style={{ textAlign: 'right', color: coin.price_change_percentage_24h > 0 ? '#00ff00' : '#ff4d4d', fontFamily: 'monospace' }}
                 data-change={coin.price_change_percentage_24h >= 0 ? 'up' : 'down'}
               >
-                {coin.price_change_percentage_24h.toFixed(2)}%
+                  {coin.price_change_percentage_24h != null ? `${coin.price_change_percentage_24h.toFixed(2)}%` : 'N/A'}
               </td>
               <td style={{ textAlign: 'center' }}>
                 {watchlist.includes(coin.id) ? (
